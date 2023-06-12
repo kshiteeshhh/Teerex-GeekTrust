@@ -1,0 +1,18 @@
+.card{
+    margin:2rem;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    border-radius:2rem;
+    border-style:outset;
+    border-color: #FFE8FF;
+}
+.card :hover{
+    transition: 500ms;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+.card-content{
+    padding:0.5rem;
+    overflow: hidden;
+}

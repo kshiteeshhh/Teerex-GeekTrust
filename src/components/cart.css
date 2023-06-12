@@ -1,0 +1,14 @@
+.cart{
+    background-color:#FFE8FF;
+    position:absolute;
+    border-radius: 1rem;
+    margin:2rem;
+}
+.card
+{
+    margin:0 0.5rem 0.5rem 0.5rem;
+}
+.image-container{
+    max-width:11rem;
+    max-height: 9rem;
+}

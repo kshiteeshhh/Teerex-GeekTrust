@@ -1,0 +1,13 @@
+.filterButton{
+    display:block !important
+}
+@media screen and (min-width:768px) {
+    .filterButton{
+        display:none !important;
+    }
+}
+.search-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

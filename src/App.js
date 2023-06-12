@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { Route, Switch } from "react-router-dom";
+import ipConfig from "./ipConfig.json";
+import Landing from "./components/Landing";
+import Cart from "./components/Cart";
+// export const config = {
+//   endpoint: `http://${ipConfig.workspaceIp}:8082/api/v1`,
+// };
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* TODO: CRIO_TASK_MODULE_LOGIN - To add configure routes and their mapping */}
+      <Switch>
+        <Route path='/' component={Landing} exact/>
+        <Route path='/cart' component={Cart} />
+      </Switch>
     </div>
   );
 }
